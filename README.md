@@ -1,3 +1,7 @@
+## Customer Management App
+
+This project is a customer management app using React, Node.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
