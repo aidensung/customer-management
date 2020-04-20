@@ -79,6 +79,7 @@ class App extends React.Component {
                 <TableCell>Birthday</TableCell>
                 <TableCell>Gender</TableCell>
                 <TableCell>Job</TableCell>
+                <TableCell>Setting</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -86,6 +87,7 @@ class App extends React.Component {
                 this.state.customers.map((customer) => {
                   return (
                     <Customer
+                      stateRefresh={this.stateRefresh}
                       key={customer.id}
                       id={customer.id}
                       image={customer.image}
