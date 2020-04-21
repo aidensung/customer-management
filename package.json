@@ -2,10 +2,11 @@
   "name": "customer-management",
   "version": "1.0.0",
   "scripts": {
-    "heroku-postbuild": "cd client && npm install && yarn build",
+    "heroku-postbuild": "cd client && yarn install && yarn build",
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "nodemon server.js && cd client && yarn start"
   },
   "dependencies": {
     "@material-ui/icons": "^4.9.1",
