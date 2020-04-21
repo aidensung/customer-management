@@ -2,7 +2,6 @@
   "name": "customer-management",
   "version": "1.0.0",
   "scripts": {
-    "heroku-postbuild": "cd client && yarn install && yarn build",
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
